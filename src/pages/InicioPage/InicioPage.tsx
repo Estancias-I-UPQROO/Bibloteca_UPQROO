@@ -1,5 +1,9 @@
+import { PageHeader } from "../../components"
+
 export const InicioPage = () => {
     return (
-        <div>InicioPage</div>
+        <>
+            <PageHeader>Inicio</PageHeader>
+        </>
     )
 }

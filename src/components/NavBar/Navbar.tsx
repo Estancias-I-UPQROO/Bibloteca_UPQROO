@@ -2,7 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function Navbar() {
+export const Navbar = () => {
   const location = useLocation();
   const [hovered, setHovered] = useState<string | null>(null);
 

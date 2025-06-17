@@ -1,5 +1,9 @@
+import { PageHeader } from "../../components"
+
 export const AlineamientosPage = () => {
     return (
-        <div>AlineamientosPage</div>
+        <>
+            <PageHeader>Alineamientos</PageHeader>
+        </>
     )
 }
