@@ -1,8 +1,10 @@
 import { PageContainer, PageHeader } from "../../components"
+import Navbar from "../../components/NavBar/Navbar"
 
 export const FilosofiaPage = () => {
     return (
         <>
+           (NavBar={<Navbar />})
             <PageHeader>Filosofía</PageHeader>
 
             <PageContainer>
