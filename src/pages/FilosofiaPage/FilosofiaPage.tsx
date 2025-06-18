@@ -1,8 +1,10 @@
 import { PageContainer, PageHeader } from "../../components"
 
+
 export const FilosofiaPage = () => {
     return (
         <>
+         
             <PageHeader>Filosofía</PageHeader>
 
             <PageContainer>
