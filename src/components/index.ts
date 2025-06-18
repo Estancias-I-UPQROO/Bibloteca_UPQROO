@@ -1,3 +1,3 @@
+export { Navbar } from "./NavBar/Navbar";
 export { PageContainer } from "./PageContainer/PageContainer";
-export { default as Navbar } from "./Navbar/Navbar";
 export { PageHeader } from "./PageHeader/PageHeader";

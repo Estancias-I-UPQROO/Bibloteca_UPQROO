@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
-export default function Navbar() {
+export const Navbar = () => {
   const location = useLocation();
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -99,9 +99,9 @@ export default function Navbar() {
       <DropdownMenu
         menu="recursos electrónicos"
         links={[
-          { to: "/bases-datos", label: "Bases de datos" },
+          { to: "/base-de-datos", label: "Base de datos" },
           { to: "/bibliotecas-digitales", label: "Bibliotecas digitales" },
-          { to: "/revistas", label: "Revistas electrónicas" },
+          { to: "/revistas-electronicas", label: "Revistas electrónicas" },
           { to: "/ebooks", label: "E-books" },
           { to: "/diccionarios", label: "Diccionarios" },
           { to: "/normas", label: "Normas y guías" },
