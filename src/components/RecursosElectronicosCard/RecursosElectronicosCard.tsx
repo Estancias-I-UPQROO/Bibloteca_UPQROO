@@ -14,7 +14,7 @@ export const RecursosElectronicosCard = ({ title, description, image, siteLink }
     return (
         <div className="shadow-md bg-gradient-to-t from-white to-slate-200 rounded-3xl h-fit relative transition-transform" onMouseEnter={() => setBlur(true)} onMouseLeave={() => setBlur(false)}>
 
-            <div className={`${blur ? 'opacity-90' : 'opacity-0'} absolute top-1/2 right-1/2 bg-gradient-to-tl from-slate-700 to-black opacity-90 w-full z-10 
+            <div className={`${blur && 'opacity-90'} opacity-0 absolute top-1/2 right-1/2 bg-gradient-to-tl from-slate-700 to-black w-full z-10 
             translate-x-1/2 -translate-y-1/2 h-full rounded-3xl transition-all space-y-10`}>
                 <p className="text-center p-10 text-white font-bold h-60 overflow-auto">{description}</p>
 
