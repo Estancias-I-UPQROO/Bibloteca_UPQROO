@@ -1,3 +1,4 @@
+export { Footer } from "./Footer/Footer";
 export { RecursosElectronicosCard } from "./RecursosElectronicosCard/RecursosElectronicosCard";
 export { RecursosElectronicosGrid } from "./RecursosElectronicosGrid/RecursosElectronicosGrid";
 export { Navbar } from "./NavBar/Navbar";

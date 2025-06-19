@@ -1,5 +1,4 @@
 import type { PropsWithChildren } from "react"
-import './styles.css';
 
 export const RecursosElectronicosGrid = ({children}: PropsWithChildren) => {
     return (
