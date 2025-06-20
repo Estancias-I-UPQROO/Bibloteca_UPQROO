@@ -1,4 +1,4 @@
-import { PageContainer, PageHeader } from "../../components"
+import { PageContainer, PageHeader } from "../../../components"
 
 
 export const FilosofiaPage = () => {
