@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import '@fortawesome/fontawesome-free/css/all.css';
-import { PageHeader } from '../../components';
 import './styles.css';
 
 export const InicioPage = () => {
