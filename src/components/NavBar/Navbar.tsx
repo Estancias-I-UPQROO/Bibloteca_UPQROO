@@ -211,9 +211,9 @@ export const Navbar = () => {
           <DesktopDropdown
             menu="recursos electrónicos"
             links={[
-              { to: "/bases-datos", label: "Bases de datos" },
+              { to: "/base-de-datos", label: "Base de datos" },
               { to: "/bibliotecas-digitales", label: "Bibliotecas digitales" },
-              { to: "/revistas", label: "Revistas electrónicas" },
+              { to: "/revistas-electronicas", label: "Revistas electrónicas" },
               { to: "/ebooks", label: "E-books" },
               { to: "/diccionarios", label: "Diccionarios" },
               { to: "/normas", label: "Normas y guías" },
