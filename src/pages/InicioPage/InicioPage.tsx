@@ -45,7 +45,6 @@ export const InicioPage = () => {
 
   return (
     <>
-      <PageHeader>INICIO</PageHeader>
       <div className="inicio-container">
 
         {/* HERO */}
