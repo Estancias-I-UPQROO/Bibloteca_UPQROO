@@ -32,15 +32,16 @@ export default function Navbar() {
     }
   };
 
+  // Estilos optimizados
   const navItemClass = (path: string) =>
     location.pathname === path
-      ? "text-orange-500 font-semibold border-b-2 border-orange-500"
-      : "hover:text-orange-500";
+      ? "text-orange-600 font-semibold border-b-2 border-orange-500"
+      : "text-gray-800 hover:text-orange-500 font-medium";
 
   const submenuItemClass = (path: string) =>
     location.pathname === path
-      ? "text-orange-500 font-semibold bg-gray-100"
-      : "hover:text-orange-500 hover:bg-gray-100";
+      ? "text-orange-600 font-medium bg-gray-50"
+      : "text-gray-700 hover:text-orange-500 hover:bg-gray-50";
 
   const NavLink = ({ to, label }: { to: string; label: string }) => (
     <div className="h-full flex items-center">
@@ -105,7 +106,7 @@ export default function Navbar() {
                 <li key={to}>
                   <Link
                     to={to}
-                    className={`block py-2 px-5 ${submenuItemClass(to)} transition-colors duration-150`}
+                    className={`block py-2 px-5 ${submenuItemClass(to)} transition-colors duration-150 text-sm`}
                     onClick={() => setActiveMenu(null)}
                   >
                     {label}
@@ -131,7 +132,7 @@ export default function Navbar() {
     return (
       <div className="border-l-2 border-gray-100 pl-2">
         <button
-          className="w-full text-left py-2 px-4 font-semibold text-gray-700 hover:text-orange-500 flex justify-between items-center"
+          className="w-full text-left py-2 px-4 font-semibold text-gray-800 hover:text-orange-500 flex justify-between items-center"
           onClick={() => setOpen(!open)}
         >
           <span>{menu.toUpperCase()}</span>
@@ -150,7 +151,7 @@ export default function Navbar() {
                 <li key={to}>
                   <Link
                     to={to}
-                    className="block py-2 text-sm text-gray-600 hover:text-orange-500 transition-colors duration-150"
+                    className="block py-2 text-sm text-gray-700 hover:text-orange-500 transition-colors duration-150"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {label}
