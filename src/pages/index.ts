@@ -1,3 +1,9 @@
-export { AlineamientosPage } from "./AlineamientosPage/AlineamientosPage";
-export { FilosofiaPage } from "./FilosofiaPage/FilosofiaPage";
+export { BibliotecasDigitalesPage } from "./RecursosElectronicosPages/BibliotecasDigitalesPage/BibliotecasDigitalesPage";
+export { DiccionariosPage } from "./RecursosElectronicosPages/DiccionariosPage/DiccionariosPage";
+export { EbooksPage } from "./RecursosElectronicosPages/EbooksPage/EbooksPage";
+export { NormasPage } from "./RecursosElectronicosPages/NormasPage/NormasPage";
+export { RevistasElectronicasPage } from "./RecursosElectronicosPages/RevistasElectronicasPage/RevistasElectronicasPage";
+export { AlineamientosPage } from "./NosotrosPages/AlineamientosPage/AlineamientosPage";
+export { FilosofiaPage } from "./NosotrosPages/FilosofiaPage/FilosofiaPage";
+export { BaseDeDatosPage } from "./RecursosElectronicosPages/BaseDeDatosPage/BaseDeDatosPage";
 export { InicioPage } from "./InicioPage/InicioPage";
