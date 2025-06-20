@@ -19,10 +19,10 @@ export const RecursosElectronicosCard = ({ title, description, image, siteLink }
                     <p className="text-center p-10 text-white font-bold h-5/6 overflow-auto">{description}</p>
                 </div>
 
-                <img src={image} alt={title} className={`${blur && 'blur'} rounded-t-3xl w-full shadow h-40 xl:h-80`} />
+                <img src={image} alt={title} className={`${blur && 'blur'} rounded-t-3xl w-full shadow h-40 xl:h-80 border-2 border-b-orange-500`} />
             </div>
 
-            <h2 className="text-center text-2xl px-8 py-5">{title}</h2>
+            <h2 className="text-center text-2xl px-8 py-5 bg-white shadow rounded-b-3xl">{title}</h2>
 
         </Link>
     )
