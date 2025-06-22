@@ -218,37 +218,7 @@ body {
   right: 0;
 }
 
-/* Redes Sociales */
-.redes-sociales {
-  position: fixed;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
 
-.red-social {
-  color: rgb(250, 142, 18);
-  font-size: 1.3rem;
-  transition: all 0.3s ease;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.red-social:hover {
-  transform: scale(1.15) translateY(-3px);
-  background: #f97316;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
 
 /* Efecto Fade del Hero */
 .hero-biblioteca .carousel .slider-wrapper {
@@ -281,16 +251,7 @@ body {
     width: 95%;
   }
 
-  .redes-sociales {
-    right: 1rem;
-    gap: 1rem;
-  }
-
-  .red-social {
-    width: 40px;
-    height: 40px;
-    font-size: 1.1rem;
-  }
+  
 
   .quienes-somos {
     padding: 3rem 1.5rem;
@@ -330,4 +291,88 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+}
+/* src/components/FranjaImagenTexto.css */
+.franja-contenedor {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Altura fija para la franja */
+  overflow: hidden;
+  margin: 3rem 0;
+}
+
+.imagen-fondo {
+  width: 100%;
+  height: 100%;
+}
+
+.imagen-fondo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.texto-superpuesto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+}
+
+.contenido-texto {
+  max-width: 800px;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+.contenido-texto h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.contenido-texto p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 600px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .franja-contenedor {
+    height: 300px;
+  }
+  
+  .contenido-texto h3 {
+    font-size: 1.8rem;
+  }
+  
+  .contenido-texto p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .franja-contenedor {
+    height: 250px;
+  }
+  
+  .contenido-texto {
+    padding: 1rem;
+  }
+  
+  .contenido-texto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }

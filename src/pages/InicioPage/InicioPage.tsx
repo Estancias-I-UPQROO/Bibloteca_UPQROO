@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import '@fortawesome/fontawesome-free/css/all.css';
 import './styles.css';
 
 export const InicioPage = () => {
@@ -20,12 +19,7 @@ export const InicioPage = () => {
     { id: 6, imagen: 'https://wallpapers.com/images/hd/1920-x-1080-hd-1qq8r4pnn8cmcew4.jpg', titulo: 'Exposición Literaria' }
   ];
 
-  const redesSociales = [
-    { id: 1, nombre: 'Facebook', icono: 'fa-facebook', link: 'https://facebook.com/upqroo' },
-    { id: 2, nombre: 'X', icono: 'fa-x', link: 'https://x.com/upqroo' },
-    { id: 3, nombre: 'Instagram', icono: 'fa-instagram', link: 'https://instagram.com/upqroo' },
-    { id: 4, nombre: 'YouTube', icono: 'fa-youtube', link: 'https://youtube.com/upqroo' }
-  ];
+ 
 
   const [centerPercent, setCenterPercent] = useState(33.33);
 
@@ -45,7 +39,6 @@ export const InicioPage = () => {
   return (
     <>
       <div className="inicio-container">
-
         {/* HERO */}
         <section className="hero-biblioteca">
           <div className="contenido-hero">
@@ -75,34 +68,10 @@ export const InicioPage = () => {
             ))}
           </Carousel>
 
-          <div className="redes-sociales">
-            {redesSociales.map(red => (
-              <a
-                key={red.id}
-                href={red.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="red-social"
-                aria-label={red.nombre}
-              >
-                <i className={`fab ${red.icono}`}></i>
-              </a>
-            ))}
-          </div>
+        
         </section>
 
-        {/* QUIÉNES SOMOS */}
-        <section className="quienes-somos">
-          <div className="quienes-somos-content">
-            <h3>Quiénes Somos</h3>
-            <p>
-              La Biblioteca Virtual Kaxáant de la Universidad Politécnica de Quintana Roo es un espacio
-              dedicado al conocimiento, la investigación y el aprendizaje. Nuestro objetivo es brindar
-              acceso a recursos educativos de calidad y fomentar la cultura en nuestra comunidad universitaria.
-              Con un amplio acervo digital y actividades culturales, buscamos ser el corazón académico de la UPQROO.
-            </p>
-          </div>
-        </section>
+      
 
         {/* EVENTOS */}
         <section className="carrusel-eventos">
@@ -159,6 +128,38 @@ export const InicioPage = () => {
             </Carousel>
           </div>
         </section>
+          {/* QUIÉNES SOMOS */}
+        <section className="quienes-somos">
+          <div className="quienes-somos-content">
+            <h3>¿Que Ofrece la Biblioteca?</h3>
+            <p>
+              En la Universidad Politécnica de Quintana Roo contamos con un área especial de biblioteca, en apoyo a la enseñanza-aprendizaje e 
+              investigación donde nuestros estudiantes encontrarán variedad de libros, los cuales asisten a los diferentes programas educativos.
+              Así mismo contamos con equipo de cómputo permitiendo a los usuarios elaborar trabajos académicos, realizar consultas o búsquedas y 
+              acceder a recursos de paga y gratuitos
+            </p>
+          </div>
+        </section>
+
+      <section className="franja-contenedor">
+      <div className="imagen-fondo">
+        <img 
+          src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+          alt="Biblioteca con libros" 
+        />
+      </div>
+      <div className="texto-superpuesto">
+        <div className="contenido-texto">
+          <h3>Comprometidos con la educación</h3>
+          <p>
+            Ofrecemos recursos que nutren la mente y expanden el intelecto. 
+            Descubre cómo la lectura puede ser una herramienta poderosa 
+            para el aprendizaje continuo.
+          </p>
+        </div>
+      </div>
+    </section>
+
       </div>
     </>
   );

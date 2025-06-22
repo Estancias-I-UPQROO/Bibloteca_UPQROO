@@ -1,0 +1,297 @@
+/* Contenedor general */
+.lineamientos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Sección introductoria */
+.intro-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.intro-text p {
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.call-to-action {
+  background-color: #f97316;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.cta-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.intro-image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de beneficios */
+.benefits-section {
+  margin: 2rem 0;
+}
+
+.benefits-section h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.benefit-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  color: #f97316;
+  margin-bottom: 0.8rem;
+}
+
+.benefit-card h3 {
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.benefit-card p {
+  font-size: 0.9rem;
+}
+
+/* Sección del PDF (Estilos priorizados) */
+.pdf-section {
+  margin: 2.5rem 0;
+}
+
+.pdf-section h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.pdf-container {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow-x: auto;
+}
+
+.pdf-viewer {
+  width: 100%;
+  max-width: 100%;
+  min-height: 500px;
+  border: none;
+  border-radius: 8px;
+  background: #f8f9fa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Vista alternativa para PDF */
+.pdf-alternative-view {
+  text-align: center;
+  padding: 2rem;
+  background: #fff8f8;
+  border: 1px solid #ffdddd;
+  border-radius: 8px;
+}
+
+.error-icon {
+  font-size: 2.5rem;
+  color: #e74c3c;
+  margin-bottom: 1rem;
+}
+
+.pdf-alternative-view h3 {
+  color: #e74c3c;
+  margin-bottom: 0.5rem;
+}
+
+.pdf-alternative-view p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Botones */
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #f97316;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #e65c00;
+}
+
+.download-button.primary {
+  background-color: #f97316;
+  color: white;
+}
+
+.download-button.primary:hover {
+  background-color: #e65c00;
+}
+
+.download-button.secondary {
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.download-button.secondary:hover {
+  background-color: #e0e0e0;
+}
+
+/* Opciones de PDF */
+.pdf-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Responsive para desktop */
+@media (min-width: 768px) {
+  .lineamientos-container {
+    padding: 2rem;
+  }
+  
+  .intro-section {
+    padding: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .intro-content {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .intro-text {
+    flex: 1;
+  }
+  
+  .intro-image {
+    flex: 0 0 40%;
+  }
+  
+  .call-to-action {
+    padding: 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .cta-icon {
+    font-size: 1.5rem;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .benefit-card {
+    padding: 2rem;
+  }
+  
+  .pdf-viewer {
+    height: 500px;
+  }
+  
+  .pdf-options {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Media Queries para el visor de PDF */
+@media (max-width: 768px) {
+  .pdf-viewer {
+    min-height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .call-to-action {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .pdf-viewer {
+    min-height: 280px;
+  }
+  
+  .download-button {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .lineamientos-container {
+    padding: 0.8rem;
+  }
+  
+  .intro-section, .pdf-container {
+    padding: 1rem;
+  }
+  
+  .pdf-viewer {
+    min-height: 220px;
+  }
+  
+  .download-button {
+    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+  }
+}

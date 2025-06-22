@@ -170,7 +170,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center h-full">
           <img
-            src="https://upqroo.edu.mx/wp-content/uploads/2025/03/UPQROO-logo.png"
+            src="/public/Upqroo_Logo.png"
             alt="Logo"
             className="h-12 w-auto"
           />
@@ -195,7 +195,7 @@ export const Navbar = () => {
             menu="acerca de nosotros"
             links={[
               { to: "/filosofia", label: "Filosofía" },
-              { to: "/alineamientos", label: "Alineamientos" },
+              { to: "/lineamientos", label: "Lineamientos" },
             ]}
           />
           <DesktopDropdown
@@ -239,7 +239,7 @@ export const Navbar = () => {
               menu="acerca de nosotros"
               links={[
                 { to: "/filosofia", label: "Filosofía" },
-                { to: "/alineamientos", label: "Alineamientos" },
+                { to: "/lineamientos", label: "Lineamientos" },
               ]}
             />
             <MobileDropdown
