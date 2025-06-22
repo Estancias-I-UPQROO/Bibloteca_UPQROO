@@ -12,8 +12,9 @@ export const LineamientosPage = () => {
   };
 
   return (
-    <div className="lineamientos-container">
+    <>
       <PageHeader>Lineamientos</PageHeader>
+      <div className="lineamientos-container">
 
       <div className="intro-section">
         <div className="intro-content">
@@ -91,5 +92,7 @@ export const LineamientosPage = () => {
         </div>
       </div>
     </div>
+
+    </>    
   );
 };

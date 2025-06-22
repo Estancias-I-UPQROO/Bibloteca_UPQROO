@@ -3,7 +3,7 @@ export { DiccionariosPage } from "./RecursosElectronicosPages/DiccionariosPage/D
 export { EbooksPage } from "./RecursosElectronicosPages/EbooksPage/EbooksPage";
 export { NormasPage } from "./RecursosElectronicosPages/NormasPage/NormasPage";
 export { RevistasElectronicasPage } from "./RecursosElectronicosPages/RevistasElectronicasPage/RevistasElectronicasPage";
-export { LineamientosPage } from "./NosotrosPages/LlineamientosPage/LineamientosPage";
+export { LineamientosPage } from "./NosotrosPages/LineamientosPage/LineamientosPage";
 export { FilosofiaPage } from "./NosotrosPages/FilosofiaPage/FilosofiaPage";
 export { BaseDeDatosPage } from "./RecursosElectronicosPages/BaseDeDatosPage/BaseDeDatosPage";
 export { InicioPage } from "./InicioPage/InicioPage";
