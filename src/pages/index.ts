@@ -7,3 +7,4 @@ export { LineamientosPage } from "./NosotrosPages/LineamientosPage/LineamientosP
 export { FilosofiaPage } from "./NosotrosPages/FilosofiaPage/FilosofiaPage";
 export { BaseDeDatosPage } from "./RecursosElectronicosPages/BaseDeDatosPage/BaseDeDatosPage";
 export { InicioPage } from "./InicioPage/InicioPage";
+export { AyudaPage } from "./Ayuda/AyudaPage";

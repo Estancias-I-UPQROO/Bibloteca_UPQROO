@@ -127,10 +127,10 @@ export const InicioPage = () => {
               ))}
             </Carousel>
           </div>
-        </section>
-          {/* QUIÉNES SOMOS */}
-        <section className="quienes-somos">
-          <div className="quienes-somos-content">
+        </section> 
+          {/* QUE OFRECEMOS */}
+        <section className="que-ofrecemos">
+          <div className="que-ofrecemos-content">
             <h3>¿Que Ofrece la Biblioteca?</h3>
             <p>
               En la Universidad Politécnica de Quintana Roo contamos con un área especial de biblioteca, en apoyo a la enseñanza-aprendizaje e 

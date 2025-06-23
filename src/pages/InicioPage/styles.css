@@ -76,30 +76,31 @@ body {
 }
 
 /* QUIÉNES SOMOS */
-.quienes-somos {
+.que-ofrecemos {
   padding: 5rem 2rem;
   background: linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%);
   text-align: center;
   position: relative;
 }
 
-.quienes-somos::before {
+.que-ofrecemos::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   height: 15px;
-  background: linear-gradient(to right, #f97316, #ff8c00, #f97316);
+  background: linear-gradient(to right, #ff8c00, #ff8c00, #ff8c00);
 }
 
-.quienes-somos-content {
+
+.que-ofrecemos-content {
   max-width: 900px;
   margin: 0 auto;
   position: relative;
 }
 
-.quienes-somos h3 {
+.que-ofrecemos h3 {
   font-size: 2.5rem;
   color: #f97316;
   margin-bottom: 1.5rem;
@@ -109,7 +110,7 @@ body {
   display: inline-block;
 }
 
-.quienes-somos h3::after {
+.que-ofrecemos h3::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -120,7 +121,7 @@ body {
   background: #f97316;
 }
 
-.quienes-somos p {
+.que-ofrecemos p {
   font-size: 1.15rem;
   line-height: 1.8;
   color: #444;
@@ -138,6 +139,15 @@ body {
   background-color: #f5f5f5;
   position: relative;
 }
+.carrusel-eventos::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: linear-gradient(to right, #ff8c00, #ff8c00, #ff8c00);
+}
 
 .carrusel-eventos h3 {
   text-align: center;
@@ -147,19 +157,25 @@ body {
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
-
 .custom-carousel-container {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 60px 40px 40px; /* más espacio arriba */
+  overflow: visible;
+  min-height: 340px; /* para que todo el contenido + hover entre */
+}
+.custom-carousel-container {
+  overflow: visible;
 }
 
 .evento-card {
   padding: 0 15px;
+  margin-bottom: 1rem; /* <- nuevo */
   user-select: none;
   transition: transform 0.3s ease;
 }
+
 
 .evento-card:hover {
   transform: translateY(-5px);
@@ -224,7 +240,9 @@ body {
 .hero-biblioteca .carousel .slider-wrapper {
   overflow: hidden !important;
 }
-
+.carousel .slider-wrapper {
+  overflow: visible !important;
+}
 .hero-biblioteca .carousel .slider {
   transition: opacity 2s ease-in-out !important;
 }
@@ -237,6 +255,9 @@ body {
 
 .hero-biblioteca .carousel .slide.selected {
   opacity: 1 !important;
+}
+.carousel .slide {
+  overflow: visible !important;
 }
 
 /* Responsive */
@@ -253,7 +274,7 @@ body {
 
   
 
-  .quienes-somos {
+  .que-ofrecemos {
     padding: 3rem 1.5rem;
   }
 
