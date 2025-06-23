@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { MainLayout } from "./layouts";
-import { LineamientosPage, BaseDeDatosPage, BibliotecasDigitalesPage, DiccionariosPage, EbooksPage, FilosofiaPage, InicioPage, NormasPage, RevistasElectronicasPage } from "./pages";
+import { LineamientosPage, BaseDeDatosPage, BibliotecasDigitalesPage, DiccionariosPage, EbooksPage, FilosofiaPage, InicioPage, NormasPage, RevistasElectronicasPage, AyudaPage } from "./pages";
 
 export const AppRouter = () => {
     return (
@@ -16,6 +16,7 @@ export const AppRouter = () => {
                     <Route path="/ebooks" element={<EbooksPage />} />
                     <Route path="/normas" element={<NormasPage />} />
                     <Route path="/revistas-electronicas" element={<RevistasElectronicasPage />} />
+                    <Route path="/ayuda" element={<AyudaPage />} />
                 </Route>
             </Routes>
         </BrowserRouter>
